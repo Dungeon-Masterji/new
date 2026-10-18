@@ -83,7 +83,44 @@ body {
 }
 
 .five .idea-5 {
-  font-size: 4rem;
+  font-size: clamp(1.25rem, 7vw, 3.5rem);
+}
+
+.idea-5 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+
+.idea-5 span {
+  margin-left: .16em;
+}
+
+.idea-5-details {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(20px) scale(.8);
+}
+
+.idea-5-name {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 3px 10px;
+}
+
+.idea-5-image {
+  display: block;
+  height: auto;
+  margin: .5rem auto 0;
+  max-width: 40vw;
+  width: 150px;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
@@ -113,7 +150,7 @@ body {
   position: absolute;
   transform: translateX(-50%);
   /* transform: scale(0.1); */
-  top: -20%;
+ top: -15%;
   width: 80px;
 }
 
@@ -266,7 +303,7 @@ body {
   }
 
   .idea-5 span {
-    display: block;
+    display: inline-block;
   }
 
   .idea-6 span {

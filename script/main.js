@@ -139,6 +139,10 @@ const animationTimeline = () => {
         },
         "+=1.5"
     )
+    .to(".idea-5 strong", 0.5, {
+        backgroundColor: "rgb(21, 161, 237)",
+        color: "#fff",
+    })
     .to(
         ".idea-5 span",
         0.7, {
@@ -155,6 +159,16 @@ const animationTimeline = () => {
         },
         "+=2"
     )
+    .to(".idea-5-details", 0.7, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+    }, "+=0.2")
+    .to(".idea-5-details", 0.7, {
+        opacity: 0,
+        y: -20,
+        scale: 0.8,
+    }, "+=3")
     .staggerFrom(
         ".idea-6 span",
         0.8, {
